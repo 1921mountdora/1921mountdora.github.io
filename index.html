@@ -16,13 +16,13 @@
 :root{--bg:#141615;--bg2:#1b1e1c;--card:#1e2220;--line:#2b302d;--sage:#78918a;--sage-hi:#a9bdb6;--ink:#ece9e1;--mute:#8f948f}
 *{box-sizing:border-box;margin:0}
 html,body{height:100%}
-body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:grid;place-items:end center;min-height:100dvh;padding:48px 18px calc(28px + env(safe-area-inset-bottom));position:relative}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:grid;place-items:start center;min-height:100dvh;padding:calc(28px + env(safe-area-inset-top)) 18px 28px;position:relative}
 body::after{content:"";position:fixed;inset:0;z-index:-1;background:
-  linear-gradient(180deg,rgba(20,22,21,.2) 0%,rgba(20,22,21,.4) 40%,rgba(20,22,21,.88) 72%,var(--bg) 100%),
+  linear-gradient(180deg,rgba(20,22,21,.55) 0%,rgba(20,22,21,.72) 45%,rgba(20,22,21,.82) 54%,rgba(20,22,21,.3) 64%,rgba(20,22,21,0) 74%),
   url("bg.jpg") center top/cover no-repeat}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 main{width:100%;max-width:520px;text-align:center}
-.logo{width:min(240px,62vw);margin:44px auto 0;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.6))}
+.logo{width:min(190px,50vw);margin:30px auto 0;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.6))}
 .logo path{fill:var(--sage)}
 .eyebrow{font-size:17px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--sage-hi);display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:22px;text-shadow:0 0 3px rgba(0,0,0,.95),0 2px 12px rgba(0,0,0,.9)}
 .eyebrow::before,.eyebrow::after{content:"";height:2px;width:34px;background:var(--sage)}
@@ -39,7 +39,7 @@ a.card:hover::before{opacity:1}
 .card .num{font-size:11px;letter-spacing:.2em;color:var(--sage);margin-bottom:10px}
 .arrow{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--sage-hi);transition:background .25s,transform .25s}
 a.card:hover .arrow{background:var(--sage);color:var(--bg);transform:translateX(3px)}
-footer{margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#5c615d}
+footer{margin-top:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#a3a8a3;text-shadow:0 1px 6px rgba(0,0,0,.9)}
 </style>
 </head>
 <body>
